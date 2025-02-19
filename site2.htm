@@ -9,42 +9,44 @@
 				margin: 0 0 0 0;
 				scrollbar-width: none;
 			}
-			#article, #aside, #footer, #header, #nav, #section{
+			article, aside, footer, header, nav, section{
 				overflow: scroll;
 			}
-			#article{
+			article{
 				overflow: hidden;
 				font-size: 0.9vh;
 				background-color: lightpink;
 				width: 50vw;
 				height: 35vh;
 			}
-			#aside{
+			aside{
 				font-size: 1.8vw;
 				float: right;
 				background-color: antiquewhite;
 				width: 50vw;
 				height: 70vh;
 			}
-			#footer{
+			footer{
 				font-size: 0.9vw;
 				background-color: lightslategray;
 				width: 100vw;
 				height: 10vh;
 			}
-			#header{
+			header{
 				font-size: 0.9vw;
 				background-color: aqua;
 				overflow: hidden;
 				width: 100vw;
 				height: 10vh;
 			}
-			#nav{
+			nav{
 				background-color: aquamarine;
 				width: 100vw;
 				height: 10vh;
+				display: grid;
+				grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
 			}
-			#section{
+			section{
 				font-size: 0.9vw;
 				background-color: goldenrod;
 				width: 50vw;
@@ -55,8 +57,6 @@
 				grid-template-columns: 50vw 50vw;
 			}
 			.navClass{
-				display: grid;
-				grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
 			}
 			.navElement{
 				padding: 1.5vw;
@@ -81,22 +81,22 @@
 				.navElement{
 					font-size: 1.8vw;
 				}
-				#aside{
+				aside{
 					font-size: 5vw;
 					float: none;
 					width: 100%;
 				}
-				#article, #section{
+				article, section{
 					font-size: 2vw;
 					width: 100%;
 				}
-				#footer{
+				footer{
 					font-size: 1.8vw;
 				}
-				#header{
+				header{
 					font-size: 3vw;
 				}
-				#nav{
+				nav{
 					height: 5vh;
 				}
 			}
@@ -104,10 +104,10 @@
 	</head>
 	<body>
 		<div style="overflow: hidden;">
-			<div id="header">
+			<header>
 				<h1 style="padding: 3vh;"><a href="index.html" style="text-decoration: none;color: black;">AAAAAAAAAAAA</a></h1>
-			</div>
-			<div id="nav" class="navClass">
+			</header>
+			<nav>
 				<div class="navElement">
 					<h3>boowomp</h3>
 				</div>
@@ -123,9 +123,9 @@
 				<div class="navElement">
 					<h3>boowomp</h3>
 				</div>
-			</div>
+			</nav>
 			<div style="height: 70%;">
-				<div id="aside">
+				<aside>
 					<div>
 						<h1>OAOAOAOA</h1>
 					</div>
@@ -145,9 +145,9 @@
 						<p>ooaoaoaoaooaaooaoaooaoooaooaoao</p>
 						<p>ooaoaoaoaooaaooaoaooaoooaooaoao</p>
 					</div>
-				</div>
+				</aside>
 				<div>
-					<div id="section">
+					<section>
 						<h3 style="padding: 3vh;">LOL LMAO</h3>
 						<p>shitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuck</p>
 						<p>shitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuck</p>
@@ -159,17 +159,18 @@
 						<p>shitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuck</p>
 						<p>shitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuck</p>
 						<p>shitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuckshitfuck</p>
-					</div>
-					<div id="article">
+					</section>
+					<article>
 						<img src="images/gnome.png" alt="gnome" style="width: 25vh;padding: 5vh;">
-					</div>
+					</article>
 				</div>
 			</div>
-				<div id="footer">
-				<dl style="padding-top: 5vh;">
-					<dt>"I'll touch you"</dt>
-					<dd>- Withma Cawk</dd>
-				</dl>
+				<footer>
+					<dl style="padding-top: 5vh;">
+						<dt>"I'll touch you"</dt>
+						<dd>- Withma Cawk</dd>
+					</dl>
+				</footer>
 			</div>
 		</div>
 	</body>
